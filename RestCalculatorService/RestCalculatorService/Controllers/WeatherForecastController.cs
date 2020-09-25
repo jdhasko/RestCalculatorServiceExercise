@@ -35,5 +35,11 @@ namespace RestCalculatorService.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<int> Get(int id)
+        {
+            return  Ok(id);
+        }
     }
 }
